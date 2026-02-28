@@ -1,0 +1,17 @@
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: /:basename/
+
+include:
+  - "index"
+  - "mixing"
+  - "mastering"
+  - "production"
+  - "livesound"
+  - "privacypolicy"
+
+exclude:
+  - ".DS_Store"
