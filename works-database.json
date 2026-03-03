@@ -1,10 +1,11 @@
-[{
+[
+  {
     "id": "concrete-monolite",
     "artist": "Concrète [Lab] Ensemble",
     "title": "Monolite",
     "year": 2025,
     "spotifyUrl": "https://open.spotify.com/intl-pt/album/4gquoQ9jlTaTNtZqIV9J9V?si=eNSi0Vw4RS-Unyx1VQt9lg",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27392efcf3396096d8e0d7b4518",
+    "imageUrl": "assets/img/artworks/concrete-monolite.webp",
     "roles": [
       "Recording"
     ]
@@ -15,7 +16,7 @@
     "title": "Como se Matam Primaveras",
     "year": 2025,
     "spotifyUrl": "https://open.spotify.com/intl-pt/album/2oPUy9NOLuilY3Cm3B2KLD?si=gY5ZEsszR_-VkDLz58-0sQ",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731149b50380c4c4ea0e5765c4",
+    "imageUrl": "assets/img/artworks/filipe-furtado-comosematamprimaveras.webp",
     "roles": [
       "Recording",
       "Production",
@@ -29,7 +30,7 @@
     "title": "Ada",
     "year": 2024,
     "spotifyUrl": "https://open.spotify.com/intl-pt/track/3zXJBqGACnkq1N8FctlUWR?si=ef640d14b99b4c36",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c66b4f91f2d4ac062b6c51dd",
+    "imageUrl": "assets/img/artworks/filipe-furtado-ada.webp",
     "roles": [
       "Recording",
       "Production",
@@ -43,7 +44,7 @@
     "title": "Cravos",
     "year": 2024,
     "spotifyUrl": "https://open.spotify.com/intl-pt/track/4mTQYxg4M7RihUVjb8ofa5?si=6a1c10041f344483",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27312256c69b4736133e78495bb",
+    "imageUrl": "assets/img/artworks/filipe-furtado-cravos.webp",
     "roles": [
       "Recording",
       "Production",
@@ -57,7 +58,7 @@
     "title": "Num Dia",
     "year": 2024,
     "spotifyUrl": "https://open.spotify.com/intl-pt/track/5zULkV4lnQI5DszvUkFvSe?si=9d7ce785da454912",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273866b3b8d0266bbdb4bef7503",
+    "imageUrl": "assets/img/artworks/joao-mesquita-numdia.webp",
     "roles": [
       "Recording"
     ]

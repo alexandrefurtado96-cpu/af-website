@@ -399,7 +399,7 @@
                 <div class="album-info-wrapper">
                   <div class="artwork-title-wrapper">
                     <div class="album-image-wrapper">
-                      <img src="assets/img/artworks/concrete-monolite.webp" loading="eager" fetchpriority="high" decoding="async" width="640" height="640" alt="Concrète [Lab] Ensemble - Monolite" class="album-image" />
+                      <img src="https://i.scdn.co/image/ab67616d0000b27392efcf3396096d8e0d7b4518" loading="eager" fetchpriority="high" decoding="async" width="640" height="640" alt="Concrète [Lab] Ensemble - Monolite" class="album-image" />
                     </div>
                     <div class="artist-name">Concrète [Lab] Ensemble</div>
                     <div class="album-title">Monolite</div>
@@ -422,7 +422,7 @@
                 <div class="album-info-wrapper">
                   <div class="artwork-title-wrapper">
                     <div class="album-image-wrapper">
-                      <img src="assets/img/artworks/filipe-furtado-comosematamprimaveras.webp" loading="eager" fetchpriority="high" decoding="async" width="640" height="640" alt="Filipe Furtado - Como se Matam Primaveras" class="album-image" />
+                      <img src="https://i.scdn.co/image/ab67616d0000b2731149b50380c4c4ea0e5765c4" loading="eager" fetchpriority="high" decoding="async" width="640" height="640" alt="Filipe Furtado - Como se Matam Primaveras" class="album-image" />
                     </div>
                     <div class="artist-name">Filipe Furtado</div>
                     <div class="album-title">Como se Matam Primaveras</div>
@@ -448,7 +448,7 @@
                 <div class="album-info-wrapper">
                   <div class="artwork-title-wrapper">
                     <div class="album-image-wrapper">
-                      <img src="assets/img/artworks/filipe-furtado-ada.webp" loading="lazy" fetchpriority="auto" decoding="async" width="640" height="640" alt="Filipe Furtado - Ada" class="album-image" />
+                      <img src="https://i.scdn.co/image/ab67616d0000b273c66b4f91f2d4ac062b6c51dd" loading="lazy" fetchpriority="auto" decoding="async" width="640" height="640" alt="Filipe Furtado - Ada" class="album-image" />
                     </div>
                     <div class="artist-name">Filipe Furtado</div>
                     <div class="album-title">Ada</div>
@@ -474,7 +474,7 @@
                 <div class="album-info-wrapper">
                   <div class="artwork-title-wrapper">
                     <div class="album-image-wrapper">
-                      <img src="assets/img/artworks/filipe-furtado-cravos.webp" loading="lazy" fetchpriority="auto" decoding="async" width="640" height="640" alt="Filipe Furtado - Cravos" class="album-image" />
+                      <img src="https://i.scdn.co/image/ab67616d0000b27312256c69b4736133e78495bb" loading="lazy" fetchpriority="auto" decoding="async" width="640" height="640" alt="Filipe Furtado - Cravos" class="album-image" />
                     </div>
                     <div class="artist-name">Filipe Furtado</div>
                     <div class="album-title">Cravos</div>
@@ -711,7 +711,7 @@
           // Fetch works database only once
           if (allWorks.length === 0) {
             console.log("Fetching works database...");
-            const response = await fetch("works-database.json");
+            const response = await fetch("works-database.test.json");
             if (!response.ok) throw new Error("Failed to load works database");
             const data = await response.json();
             // Ensure data is an array
@@ -821,15 +821,10 @@
       }
 
       // Load works when DOM is ready
-      const hasServerRenderedWorks =
-        document.querySelectorAll("#main-works-list .collection-item").length > 0;
-
       if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", () =>
-          loadWorksDatabase(!hasServerRenderedWorks),
-        );
+        document.addEventListener("DOMContentLoaded", () => loadWorksDatabase(true));
       } else {
-        loadWorksDatabase(!hasServerRenderedWorks);
+        loadWorksDatabase(true);
       }
 
       // Handle load more button clicks
